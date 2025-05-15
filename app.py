@@ -64,3 +64,9 @@ with st.expander('Data preparation'):
   input_row
   st.write('**Encoded y**')
   y
+
+clf = RandomForestClassifier()
+clf.fit(X, y)
+
+prediction = clf.predict(input_row)
+prediction_proba = clf.predict_proba(input_row)
