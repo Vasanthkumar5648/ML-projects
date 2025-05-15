@@ -38,8 +38,8 @@ joblib.dump(model, 'churn_model.pkl')
 joblib.dump(scaler, 'scaler.pkl') 
 
 def predict_churn(input_data): 
-model = joblib.load('churn_model.pkl') 
-scaler = joblib.load('scaler.pkl') 
-input_data = scaler.transform([input_data]) 
-prediction = model.predict(input_data) 
-return "Churn" if prediction[0] == 1 else "Not Churn" 
+  model = joblib.load('churn_model.pkl') 
+  scaler = joblib.load('scaler.pkl') 
+  input_data = scaler.transform([input_data]) 
+  prediction = model.predict(input_data) 
+  return "Churn" if prediction[0] == 1 else "Not Churn" 
