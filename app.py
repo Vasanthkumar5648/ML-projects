@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-pip show scikit-learn
 
 
 st.title('🤖 Machine Learning App')
