@@ -5,8 +5,8 @@ import joblib
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 # Load the saved model and scaler
-model = joblib.load('https://github.com/Vasanthkumar5648/ML-projects/blob/main/churn_model.pkl')
-scaler = joblib.load('https://github.com/Vasanthkumar5648/ML-projects/blob/main/scaler.pkl')
+model = joblib.load('https://github.com/Vasanthkumar5648/ML-projects/raw/main/churn_model.pkl')
+scaler = joblib.load('https://github.com/Vasanthkumar5648/ML-projects/raw/main/scaler.pkl')
 
 # Title and description
 st.title("Telco Customer Churn Prediction")
