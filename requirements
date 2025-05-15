@@ -3,7 +3,7 @@ numpy
 pandas
 sklearn
 RandomForestClassifier
-scikit-learn
+scikit-learn>=1.0.0
 joblib
 streamlit
 numpy
