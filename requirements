@@ -1,6 +1,8 @@
 streamlit
 numpy
 pandas
+sklearn
+RandomForestClassifier
 scikit-learn
 joblib
 streamlit
