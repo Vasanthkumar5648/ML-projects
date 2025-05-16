@@ -78,11 +78,17 @@ total_charges = st.sidebar.selectbox("Total Charges", list(range(0, 10100, 10)))
 # Predict Button
 if st.sidebar.button("Predict Churn"):
     st.subheader("🔍 Selected Input Values")
-    st.write(f"**Tenure:** {tenure} months")
-    st.write(f"**Internet Service:** {internet_service}")
-    st.write(f"**Contract:** {contract}")
-    st.write(f"**Monthly Charges:** ${monthly_charges}")
-    st.write(f"**Total Charges:** ${total_charges}")
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("<p style='font-weight:bold; color:black;'>Customer Details:</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-weight:bold; color:black;'>• Tenure: {tenure} months</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-weight:bold; color:black;'>• Contract: {contract}</p>", unsafe_allow_html=True)
+    
+    with col2:
+        st.markdown("<p style='font-weight:bold; color:black;'>Financial Details:</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-weight:bold; color:black;'>• Monthly Charges: ${monthly_charges}</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-weight:bold; color:black;'>• Total Charges: ${total_charges}</p>", unsafe_allow_html=True)
 
 
 # Map input values to numeric using the label mapping
