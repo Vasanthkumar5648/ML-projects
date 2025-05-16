@@ -3,7 +3,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 
 # Load the dataset
-telecom_cust = pd.read_csv('https://raw.githubusercontent.com/Vasanthkumar5648/ML-projects/main/Telco_Customer_Churn%20(1).csv')
+telecom_cust = pd.read_csv('https://github.com/Vasanthkumar5648/ML-projects/blob/main/Telecom_Customer_Churn/Telco_Customer_Churn.csv')
 
 # Data preprocessing
 # Fill missing values in 'TotalCharges' and convert to numeric
