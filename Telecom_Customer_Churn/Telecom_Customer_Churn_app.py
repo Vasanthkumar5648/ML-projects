@@ -66,7 +66,7 @@ st.markdown(
 )
 
 # Create a Streamlit app
-st.title("📊 Customer Churn Prediction App")
+st.markdown('<div class="title-box">📊 Customer Churn Prediction App</div>', unsafe_allow_html=True)
 
 # Input fields for feature values on the main screen
 st.sidebar.header("Enter Customer Information")
@@ -79,7 +79,7 @@ total_charges = st.sidebar.selectbox("Total Charges", list(range(0, 10100, 10)))
 # Predict Button
 if st.sidebar.button("Predict Churn"):
     # Display selected input values with bold black text
-    st.subheader("<p style='font-weight:bold; color:black;'>🔍 Selected Input Values:</p>")
+    st.subheader("🔍 Selected Input Values")
     col1, col2 = st.columns(2)
     
     with col1:
