@@ -77,7 +77,7 @@ st.markdown(
 )
 
 # Create a Streamlit app
-st.title("📊 Customer Churn Prediction App")
+st.markdown('<div class="title-box">📊 Customer Churn Prediction App</div>', unsafe_allow_html=True)
 # Input fields for feature values on the main screen
 st.sidebar.header("Enter Customer Information")
 tenure = st.sidebar.selectbox("Tenure (in months)", list(range(0, 110, 10)))
