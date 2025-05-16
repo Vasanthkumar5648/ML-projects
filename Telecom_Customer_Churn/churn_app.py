@@ -59,6 +59,17 @@ st.markdown(
             font-family: 'Verdana', sans-serif;
             font-size: 16px;
             color: black;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .input-value {
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            color: black;
+            font-weight: bold;
+            margin-left: 15px;
+            margin-bottom: 10px;
         }
     </style>
     """,
