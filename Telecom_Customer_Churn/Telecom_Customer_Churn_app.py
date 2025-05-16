@@ -110,7 +110,7 @@ contract = label_mapping[contract]
 prediction = model.predict([[tenure, internet_service, contract, monthly_charges, total_charges]])
 
 # Display the prediction result on the main screen
-st.header("Prediction Result")
+st.markdown('<div class="section-header">Prediction Result</div>', unsafe_allow_html=True)
 if prediction[0] == 0:
     st.markdown(
             '<div style="font-weight:bold; color:black; background-color:#e6f7ff; padding:15px; border-radius:5px; border-left:5px solid #1890ff;">'
