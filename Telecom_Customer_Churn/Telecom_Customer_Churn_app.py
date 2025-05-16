@@ -136,8 +136,7 @@ contract = label_mapping[contract]
 prediction = model.predict([[tenure, internet_service, contract, monthly_charges, total_charges]])
 
 # Prediction Result section
-    st.markdown('<div class="section-header">Prediction Result</div>', unsafe_allow_html=True)
-
+st.markdown('<div class="section-header">Prediction Result</div>', unsafe_allow_html=True)
 prediction = [0]  # 0 = stay, 1 = churn
 if prediction[0] == 0:
         st.markdown(
