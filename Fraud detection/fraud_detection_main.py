@@ -17,7 +17,7 @@ import os
 import streamlit as st
 
 # Load dataset
-df = pd.read_csv('/mnt/data/Fraud_Analysis_Dataset.csv')
+df = pd.read_csv('https://raw.github.com/Vasanthkumar5648/ML-projects/main/Fraud%20detection/Fraud_Analysis_Dataset.csv')
 
 # Column Descriptions:
 # step: 1 step = 1 hour of time
