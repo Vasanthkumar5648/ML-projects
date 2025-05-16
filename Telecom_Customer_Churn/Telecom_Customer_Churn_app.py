@@ -66,8 +66,6 @@ st.markdown(
 )
 
 # Create a Streamlit app
-st.set_page_config(page_title="Customer Churn Prediction", layout="wide")
-
 st.title("📊 Customer Churn Prediction App")
 
 # Input fields for feature values on the main screen
