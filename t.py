@@ -29,6 +29,7 @@ model.fit(X, y)
 
 #creating a background
 
+import streamlit as st
 st.markdown(
     """
     <style>
@@ -64,8 +65,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
-import streamlit as st
 # Create a Streamlit app
 st.title("📊 Customer Churn Prediction App")
 # Input fields for feature values on the main screen
