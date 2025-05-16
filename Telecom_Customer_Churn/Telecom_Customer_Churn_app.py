@@ -119,21 +119,34 @@ if st.sidebar.button("Predict Churn"):
         st.markdown('<p class="custom-text">Financial Details:</p>', unsafe_allow_html=True)
         st.markdown(f'<p class="input-value">• Monthly Charges: ${monthly_charges}</p>', unsafe_allow_html=True)
         st.markdown(f'<p class="input-value">• Total Charges: ${total_charges}</p>', unsafe_allow_html=True)
-    
-    # Prediction Result section
+
+# Map input values to numeric using the label mapping
+label_mapping = {
+    'DSL': 0,
+    'Fiber optic': 1,
+    'No': 2,
+    'Month-to-month': 0,
+    'One year': 1,
+    'Two year': 2,
+}
+internet_service = label_mapping[internet_service]
+contract = label_mapping[contract]    
+
+# Make a prediction using the model
+prediction = model.predict([[tenure, internet_service, contract, monthly_charges, total_charges]])
+
+# Prediction Result section
     st.markdown('<div class="section-header">Prediction Result</div>', unsafe_allow_html=True)
-    
-    # Mock prediction (replace with your actual model prediction)
-    prediction = [0]  # 0 = stay, 1 = churn
-    
-    if prediction[0] == 0:
+
+prediction = [0]  # 0 = stay, 1 = churn
+if prediction[0] == 0:
         st.markdown(
             '<div class="prediction-box">'
             '✅ This customer is likely to stay.'
             '</div>', 
             unsafe_allow_html=True
         )
-    else:
+else:
         st.markdown(
             '<div class="prediction-box">'
             '⚠️ This customer is likely to churn.'
