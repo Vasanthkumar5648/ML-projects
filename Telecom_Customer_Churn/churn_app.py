@@ -105,7 +105,7 @@ if st.sidebar.button("Predict Churn"):
     
     with col1:
         st.markdown("<p style='font-weight:bold; color:black;'>Customer Details:</p>", unsafe_allow_html=True)
-        st.markdown("<p style='font-weight:bold; color:black;'>Internet Service:</p>", unsafe_allow_html=True)
+        st.markdown("<p style='font-weight:bold; color:black;'>Internet Service:{internet_service}</p>", unsafe_allow_html=True)
         st.markdown(f"<p style='font-weight:bold; color:black;'>• Tenure: {tenure} months</p>", unsafe_allow_html=True)
         st.markdown(f"<p style='font-weight:bold; color:black;'>• Contract: {contract}</p>", unsafe_allow_html=True)
     
