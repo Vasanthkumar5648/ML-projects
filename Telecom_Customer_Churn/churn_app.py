@@ -34,7 +34,7 @@ st.markdown(
     """
     <style>
         html, body, .stApp {
-            font-family: 'Arial', sans-serif; /* Change font here */
+            font-family: 'Arial', sans-serif;
             background-color: #FFFFFF;
         }
 
@@ -44,15 +44,27 @@ st.markdown(
             font-weight: bold;
             text-align: center;
             color: black;
+            margin-bottom: 30px;
+        }
+
+        .section-header {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 20px;
         }
 
         .prediction-box {
-            background-color:#D3D3D3;
+            background-color: #D3D3D3;
             font-family: 'Courier New', monospace;
             font-size: 18px;
             font-weight: bold;
             text-align: center;
             color: black;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
         }
 
         .custom-text {
