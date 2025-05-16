@@ -105,6 +105,7 @@ if st.sidebar.button("Predict Churn"):
     
     with col1:
         st.markdown("<p style='font-weight:bold; color:black;'>Customer Details:</p>", unsafe_allow_html=True)
+        st.markdown("<p style='font-weight:bold; color:black;'>Internet Service:</p>", unsafe_allow_html=True)
         st.markdown(f"<p style='font-weight:bold; color:black;'>• Tenure: {tenure} months</p>", unsafe_allow_html=True)
         st.markdown(f"<p style='font-weight:bold; color:black;'>• Contract: {contract}</p>", unsafe_allow_html=True)
     
@@ -130,7 +131,7 @@ contract = label_mapping[contract]
 prediction = model.predict([[tenure, internet_service, contract, monthly_charges, total_charges]])
 
 # Display the prediction result on the main screen
-st.header("Prediction Result")
+st.markdown('<div class="section-header">Prediction Result</div>', unsafe_allow_html=True)
 if prediction[0] == 0:
     st.markdown('<div class="prediction-box" style="color: Blue;">✅ This customer is likely to stay.</div>', unsafe_allow_html=True)
 else:
