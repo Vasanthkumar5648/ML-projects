@@ -79,7 +79,8 @@ total_charges = st.sidebar.selectbox("Total Charges", list(range(0, 10100, 10)))
 # Predict Button
 if st.sidebar.button("Predict Churn"):
     # Display selected input values with bold black text
-    st.subheader("🔍 Selected Input Values")
+    st.markdown('<div class="section-header">🔍 Selected Input Values</div>', unsafe_allow_html=True)    
+    
     col1, col2 = st.columns(2)
     
     with col1:
