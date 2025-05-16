@@ -90,8 +90,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Page configuration
-st.set_page_config(page_title="Customer Churn Prediction", layout="wide")
 
 # Main title with custom styling
 st.markdown('<div class="title-box">📊 Customer Churn Prediction App</div>', unsafe_allow_html=True)
