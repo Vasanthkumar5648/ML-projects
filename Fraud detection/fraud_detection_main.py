@@ -8,7 +8,6 @@ from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.callbacks import EarlyStopping
 from transformers import BertTokenizer, TFBertModel
-import tensorflow as tf
 from sklearn.decomposition import PCA
 import joblib
 import os
