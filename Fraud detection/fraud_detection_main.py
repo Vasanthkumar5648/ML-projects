@@ -1,7 +1,5 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.metrics import accuracy_score, roc_auc_score, confusion_matrix, roc_curve, classification_report, auc
@@ -94,16 +92,6 @@ evaluate_model(y_test, y_pred_dl, y_proba_dl, "Deep Learning")
 fpr_dl, tpr_dl, _ = roc_curve(y_test, y_proba_dl)
 auc_dl = auc(fpr_dl, tpr_dl)
 
-plt.figure(figsize=(10, 6))
-plt.plot(fpr_dl, tpr_dl, label=f'Deep Learning (AUC = {auc_dl:.2f}')
-plt.plot([0, 1], [0, 1], 'k--', label='Random Guess')
-plt.title('📉 ROC Curve - Deep Learning Model')
-plt.xlabel('False Positive Rate')
-plt.ylabel('True Positive Rate')
-plt.legend()
-plt.grid(True)
-plt.tight_layout()
-plt.show()
 
 # 💰 Financial Impact Analysis
 avg_fraud_amount = df[df['isFraud'] == 1]['amount'].mean()
