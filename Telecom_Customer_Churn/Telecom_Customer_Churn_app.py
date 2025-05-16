@@ -66,7 +66,10 @@ st.markdown(
 )
 
 # Create a Streamlit app
+st.set_page_config(page_title="Customer Churn Prediction", layout="wide")
+
 st.title("📊 Customer Churn Prediction App")
+
 # Input fields for feature values on the main screen
 st.sidebar.header("Enter Customer Information")
 tenure = st.sidebar.selectbox("Tenure (in months)", list(range(0, 110, 10)))
@@ -77,6 +80,7 @@ total_charges = st.sidebar.selectbox("Total Charges", list(range(0, 10100, 10)))
 
 # Predict Button
 if st.sidebar.button("Predict Churn"):
+    # Display selected input values with bold black text
     st.subheader("🔍 Selected Input Values")
     col1, col2 = st.columns(2)
     
@@ -108,7 +112,17 @@ prediction = model.predict([[tenure, internet_service, contract, monthly_charges
 
 # Display the prediction result on the main screen
 st.header("Prediction Result")
-if prediction[0] == 0:
-    st.markdown('<div class="prediction-box" style="color: Blue;">✅ This customer is likely to stay.</div>', unsafe_allow_html=True)
-else:
-    st.markdown('<div class="prediction-box" style="color: Red;">⚠️ This customer is likely to churn.</div>', unsafe_allow_html=True)
+    if prediction[0] == 0:
+        st.markdown(
+            '<div style="font-weight:bold; color:black; background-color:#e6f7ff; padding:15px; border-radius:5px; border-left:5px solid #1890ff;">'
+            '✅ <span style="font-size:18px;">This customer is likely to stay.</span>'
+            '</div>', 
+            unsafe_allow_html=True
+        )
+    else:
+        st.markdown(
+            '<div style="font-weight:bold; color:black; background-color:#fff1f0; padding:15px; border-radius:5px; border-left:5px solid #ff4d4f;">'
+            '⚠️ <span style="font-size:18px;">This customer is likely to churn.</span>'
+            '</div>', 
+            unsafe_allow_html=True
+        )
