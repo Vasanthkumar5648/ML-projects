@@ -10,3 +10,4 @@ st.sidebar.info("""
 This application was developed to demonstrate a machine learning model for breast cancer classification.
 The model was trained on the Wisconsin Breast Cancer Dataset.
 """)
+https://github.com/Vasanthkumar5648/ML-projects/blob/main/Breast%20Cancer/breast_cancer_data.csv
