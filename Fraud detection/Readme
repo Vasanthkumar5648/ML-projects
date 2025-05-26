@@ -1,0 +1,26 @@
+
+---
+
+## **Optimized LinkedIn Post**
+
+> Just wrapped up an exciting machine learning project on **Fraud Detection**!  
+>  
+> Built an end-to-end pipeline to detect fraudulent financial transactions using:
+> - EDA, Feature Engineering, PCA, and SMOTE  
+> - Models: Logistic Regression, Random Forest, XGBoost, LightGBM  
+> - Deep Learning: LSTM and CNN  
+> - Hyperparameter Tuning with RandomizedSearchCV and Optuna  
+>  
+> Achieved:
+> - **99% Accuracy**, **96% F1-Score**, and a high **ROC-AUC**  
+> - Simulated real-time predictions and estimated net savings from fraud detection  
+>  
+> Tools: Python, scikit-learn, XGBoost, LightGBM, TensorFlow, Optuna  
+>  
+> **Check it out:** [GitHub link here]  
+>  
+> #MachineLearning #FraudDetection #AI #Python #DataScience #XGBoost #LightGBM #Optuna #DeepLearning
+
+---
+
+Let me know if you'd like me to customize the README further (e.g., add screenshots or charts), or if you want help crafting a shorter version of this post.
