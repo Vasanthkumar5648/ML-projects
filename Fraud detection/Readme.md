@@ -93,6 +93,11 @@ We calculated:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/fraud-detection-ml.git
-   cd fraud-detection-ml
+   git clone https://github.com/Vasanthkumar5648/ML-projects/blob/main/Fraud%20detection/fraud_detection_main.py
+   cd fraud-detection-main
    
+2.Install requirements:
+pip install -r requirements.txt
+
+3.Run the notebook:
+jupyter notebook
